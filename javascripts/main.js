@@ -48,7 +48,7 @@ requirejs(["jquery", "lodash", "hbs", "bootstrap", "firebase", "addFam", "delFam
   $('#main').on("click",".delButton", function() {
      var retVal = confirm("This will delete your family member. Click ok to continue");
      if (retVal === true) {
-       var getKey = $(this).parent(".fams").attr("data-key");
+       var getKey = $(this).closest(".fams").attr("data-key");
        delFam.delFamMember(getKey);     
      } else {
        return false;

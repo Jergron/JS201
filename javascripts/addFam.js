@@ -5,7 +5,7 @@ define(["jquery"], function($){
           "name":$("#fullName").val(),
           "age":$("#age").val(),
           "gender":$("#gender").val(),
-          "skills": [$("#skills").val().split(", "),
+          "skills": [$("#skills").val().split(" , "),
           ]
       };
       $.ajax({
